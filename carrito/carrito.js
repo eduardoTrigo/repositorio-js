@@ -5,6 +5,7 @@ const producto = document.getElementById("producto")
 const precio = document.getElementById("precio")
 const imagen = document.getElementById("imagen")
 const cart = document.getElementById("cart")
+const btnLimpiar = document.getElementById("btnLimpiar")
 
 // limpiar imput
 function limpiar(){
@@ -14,12 +15,14 @@ function limpiar(){
 }
 
 function renderCard(objetoProducto){
+
+    cart.innerHTML = ""
     // agregar a la lista
 
     for (let i = 0; i < carrito.length; i++) {
         cart.innerHTML += `<li class="col-4">
         <div class="card">
-            <img src="${carrito[i].imagen}" class="img-fluid" alt=""></img>
+            <img src="${carrito[i].foto}" class="img-fluid" ></img>
             <div class="card-body">
                 <h3 class="">${carrito[i].nombre}</h3>
                 <h6 class="">${carrito[i].price}</h6>
@@ -54,6 +57,5 @@ function handleSubmit(event) {
     
 }
 
-
-
 form.addEventListener('submit', handleSubmit)
+btnLimpiar.addEventListener('click' , limpiar)
