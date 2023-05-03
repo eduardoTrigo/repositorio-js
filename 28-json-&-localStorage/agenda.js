@@ -19,6 +19,16 @@ class Agenda{
     agregarContacto(contacto){
         this.contactos.push(contacto)
     }
+
+    contactosIguales(nombreContacto){
+        const contactoExist = this.contactos.find(function(value){
+            if (value.nombre === nombreContacto) {
+                return true
+            }else{
+                return false
+            }
+        })
+    }
 }
 
 //Variables iniciales
@@ -28,6 +38,7 @@ const nombreInput = document.getElementById("nombre")
 const numeroInput = document.getElementById("numeroTel")
 const limpiar = document.getElementById("limpiar")
 const mostrar = document.getElementById("mostrar")
+const agendaContainer = document.getElementById("agendaContainer")
 
 
 //funciones
@@ -55,6 +66,14 @@ function agregarContacto(event){
     guardarAgenda()
 
     limpiarInput()
+
+    //crear la linea
+    const nuevaLinea = document.createElement("li")
+    const textoLinea = document.createTextNode(`Nombre: ${nombre} ; Numero: ${numero}`)
+    nuevaLinea.appendChild(textoLinea)
+
+    //agrego la linea al contenedor
+    agendaContainer.appendChild(nuevaLinea)
 }
 
 function botonlimpiar(event) {
