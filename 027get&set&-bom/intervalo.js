@@ -22,6 +22,11 @@ function refresh(){
     console.log(datos)
 }
 
+function actualizar(){
+    console.log("actualizar")
+    setTimeout(refresh,1000)
+}
+
 function activar() {
     console.log("activar")
     intervalo = setInterval(refresh, 3000)
@@ -32,10 +37,6 @@ function Desconectar(){
     clearInterval(intervalo)
 }
 
-function actualizar(){
-    console.log("actualizar")
-    setTimeout(refresh,1000)
-}
 
 botonVivo.addEventListener("click", activar)
 botonDesconectar.addEventListener("click",Desconectar)

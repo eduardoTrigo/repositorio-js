@@ -17,6 +17,9 @@ class ColeccionCursos{
     constructor(){
         this.cursos = []
     }
+    agregarCursos(curso){
+        this.cursos.push(curso)
+    }
 }
 
 const curso1 = new ColeccionCursos()
