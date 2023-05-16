@@ -28,6 +28,7 @@ const numeroInput = document.getElementById("numero")
 const limpiarbtn = document.getElementById("limpiar")
 const btnMostrar = document.getElementById("mostrar")
 const tableCont = document.getElementById("tbody")
+let contadorCelda = 1
 // funciones
 
 function limpiarInput(){
@@ -54,7 +55,7 @@ function crearContacto(event){
 
     const nombre = nombreInput.value
     const numero = numeroInput.value
-
+    
     const nuevoContacto = new Contact(nombre,numero)
     agenda.agregarContacto(nuevoContacto)
 
@@ -63,16 +64,25 @@ function crearContacto(event){
     limpiarInput()
 
     const newFila = document.createElement("tr")
+
+    const celdaNum = document.createElement("th")
+    const contCelNum = document.createTextNode(contadorCelda.toString())
+    celdaNum.appendChild(contCelNum)
+    newFila.appendChild(celdaNum)
+
     const celda1 = document.createElement("td")
     const contenidoCelda = document.createTextNode(nombre) 
     celda1.appendChild(contenidoCelda)
     newFila.appendChild(celda1)
+
     const celda2 = document.createElement("td")
     const contenidoCelda2 = document.createTextNode(numero) 
     celda2.appendChild(contenidoCelda2)
     newFila.appendChild(celda2)
 
     tableCont.appendChild(newFila)
+
+    contadorCelda++
 }
 
 function btnLimpiar(event){
