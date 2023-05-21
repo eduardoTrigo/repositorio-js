@@ -1,0 +1,49 @@
+{
+    "data": [
+        {
+            "ciudad": "San Miguel de Tucuman",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 19 
+        },
+        {
+            "ciudad": "Concepcion",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 21 
+        },
+        {
+            "ciudad": "Aguilares",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 23 
+        },
+        {
+            "ciudad": "Alderete",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 18 
+        },
+        {
+            "ciudad": "Lules",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 22 
+        },
+        {
+            "ciudad": "Monteros",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 24 
+        },
+        {
+            "ciudad": "Simoca",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 23 
+        },
+        {
+            "ciudad": "Graneros",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 19
+        },
+        {
+            "ciudad": "alverdi",
+            "descripcion": "ciudad capital de la provincia",
+            "temperatura": 18 
+        }
+    ]
+}
