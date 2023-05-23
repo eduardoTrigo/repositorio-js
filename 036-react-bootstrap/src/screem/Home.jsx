@@ -1,17 +1,10 @@
-import { useState } from 'react'
 import { Button, Carousel, Col, Container,Row, Card } from "react-bootstrap"
 
 
-function App() {
-  const [count, setCount] = useState(0)
-  const sumarUno = () => { setCount(count + 1) }
+function Home() {
+  
   return (
     <>
-      {/* <h1 className='text-white'>Movie App</h1>
-      
-      <div>
-        <Button onClick={sumarUno}>+1</Button>
-      </div> */}
 
       <Container>
         <Carousel >
@@ -111,4 +104,4 @@ function App() {
   )
 }
 
-export default App
+export default Home

@@ -7,7 +7,7 @@ function BasicExample() {
   return (
     <Navbar bg="danger" expand="lg" >
       <Container>
-        <Navbar.Brand href="#home">MovieApp</Navbar.Brand>
+        <Navbar.Brand href="#home" className='text-white'>MovieApp</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
