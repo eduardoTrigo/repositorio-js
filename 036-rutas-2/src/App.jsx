@@ -6,6 +6,7 @@ import Home from "./pages/Home"
 import Punto1 from "./pages/Punto1"
 import Punto2 from "./pages/Punto2"
 import Punto3 from "./pages/Punto3"
+import Punto4 from "./pages/Punto4"
 // import "react-bootstrap"
 
 
@@ -25,6 +26,7 @@ function App() {
           <Route path="punto1" element={<Punto1 />} /> 
           <Route path="punto2" element={<Punto2 />} /> 
           <Route path="punto3" element={<Punto3 />} /> 
+          <Route path="punto4" element={<Punto4 />} /> 
         </Routes>             
       </BrowserRouter>
       

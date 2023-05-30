@@ -15,6 +15,7 @@ const NavBarMenu = () => {
             <NavLink className="nav-link text-danger" to="/Punto1">Punto1</NavLink>
             <NavLink className="nav-link text-danger" to="/Punto2">Punto2</NavLink>
             <NavLink className="nav-link text-danger" to="/Punto3">Punto3</NavLink>
+            <NavLink className="nav-link text-danger" to="/Punto4">Punto4</NavLink>
             
           </Nav>
         </Navbar.Collapse>
