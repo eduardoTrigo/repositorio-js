@@ -12,8 +12,9 @@ const NavBarMenu = () => {
           <Nav className="me-auto">
             <NavLink className="nav-link text-danger" to="/">Home</NavLink>
             <NavLink className="nav-link text-danger" to="/About">About</NavLink>
-            {/* <Nav.Link className='text-white' href="#home">Home</Nav.Link>
-            <Nav.Link className='text-white' href="#link">about</Nav.Link> */}
+            <NavLink className="nav-link text-danger" to="/Punto1">Punto1</NavLink>
+            <NavLink className="nav-link text-danger" to="/Punto2">Punto2</NavLink>
+            <NavLink className="nav-link text-danger" to="/Punto3">Punto3</NavLink>
             
           </Nav>
         </Navbar.Collapse>
